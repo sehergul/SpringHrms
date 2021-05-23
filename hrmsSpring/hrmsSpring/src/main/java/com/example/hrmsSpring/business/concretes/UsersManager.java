@@ -19,7 +19,8 @@ public class UsersManager implements UsersService{
 	private UsersDao userDao;
 
 	
-	//autowired: injection yapar- karşılığı olan sınıfı bulup enjekte ediyor
+	//autowired: injection yapar- karşılığı olan sınıfı bulup enjekte ediyor	
+	//autowired kullanmasaydik newlemek zorunda kalacaktik
 	@Autowired
 	public UsersManager(UsersDao userDao) {
 		super();
