@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "users")			//karsilik geldigi tablo adi
 public class Users {
 	
-	@Id				//karsilik geldigi tablo adi
+	@Id				//tablodaki id kolonunun verilmesi lazim- primary key
 	@GeneratedValue			//birer birer artirarak
 	@Column(name = "id")
 	private int id;
