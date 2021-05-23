@@ -9,11 +9,17 @@ import com.example.hrmsSpring.business.abstracts.UsersService;
 import com.example.hrmsSpring.dataAccess.abstracts.UsersDao;
 import com.example.hrmsSpring.entities.concretes.Users;
 
-@Service
+@Service //business gorevini gorecek katman icin kullanilir
 public class UsersManager implements UsersService{
 
+	
+	/*  @Autowired bunun ustune de yazilabilirdi
+	fakat birden fazla dependency injection olabilecegi icin
+	constructor ustune yazilir */	
 	private UsersDao userDao;
 
+	
+	//autowired: injection yapar- karşılığı olan sınıfı bulup enjekte ediyor
 	@Autowired
 	public UsersManager(UsersDao userDao) {
 		super();
