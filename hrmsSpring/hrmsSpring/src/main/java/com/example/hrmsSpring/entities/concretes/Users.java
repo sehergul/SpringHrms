@@ -13,7 +13,7 @@ public class Users {
 	
 	@Id				//tablodaki id kolonunun verilmesi lazim- primary key
 	@GeneratedValue			//birer birer artirarak
-	@Column(name = "id")
+	@Column(name = "id")		//karsilik geldigi kolon
 	private int id;
 	
 	@Column(name = "email")
