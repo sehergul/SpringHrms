@@ -7,12 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Entity
-@Table(name = "users")
+@Entity 				//karsilik geldigi katman
+@Table(name = "users")			//karsilik geldigi tablo adi
 public class Users {
 	
-	@Id
-	@GeneratedValue
+	@Id				//karsilik geldigi tablo adi
+	@GeneratedValue			//birer birer artirarak
 	@Column(name = "id")
 	private int id;
 	
