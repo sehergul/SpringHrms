@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.hrmsSpring.business.abstracts.UsersService;
 import com.example.hrmsSpring.entities.concretes.Users;
 
-@RestController
-@RequestMapping("/api/users")
+
+//Controller, dis dunya ile sistemin iletisim kurdugu yer
+
+@RestController			//Java olmayanlar da tanısın diye
+@RequestMapping("/api/users")	//birden fazla controller olabilir
 public class UsersController {
 
 	private UsersService userService;
